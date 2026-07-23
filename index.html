@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | AI Engineer — Sameer Qureshi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Titan+One&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&family=Mr+Dafoe&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HERO — coded collage (editable) -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+
+    <div class="hero__stage">
+      <!-- Main postage stamp -->
+      <div class="hero__stamp">
+        <h1 class="hero__title">
+          <span class="hero__word">Portfolio</span>
+          <span class="hero__year">2026</span>
+        </h1>
+      </div>
+
+      <!-- Torn lined note -->
+      <aside class="hero__note">
+        <p class="hero__hi">HI! I'M SAMEER</p>
+        <ul class="hero__roles">
+          <li>AI ENGINEER</li>
+          <li>FULL-STACK DEVELOPER</li>
+          <li>LLM / RAG ENGINEER</li>
+          <li>PYTHON DEVELOPER</li>
+          <li>PROMPT ENGINEER</li>
+          <li>AUTOMATION ENGINEER</li>
+        </ul>
+      </aside>
+
+      <!-- Vintage stamp + safety pin -->
+      <div class="hero__badge">
+        <img class="hero__badge-img" src="assets/vintage-stamp.png" alt="" />
+        <svg class="hero__safety-pin" viewBox="0 0 48 90" aria-hidden="true">
+          <defs>
+            <linearGradient id="pinGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f4f4f4"/>
+              <stop offset="40%" stop-color="#bdbdbd"/>
+              <stop offset="100%" stop-color="#7a7a7a"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="24" cy="16" rx="13" ry="12" fill="none" stroke="url(#pinGrad)" stroke-width="3.5"/>
+          <path d="M24 28 V72" stroke="url(#pinGrad)" stroke-width="2.8" stroke-linecap="round"/>
+          <path d="M24 72 L18 82" stroke="url(#pinGrad)" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- Polaroid + paperclip -->
+      <figure class="hero__polaroid">
+        <img src="assets/portrait-polaroid.png" alt="Portrait" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- MARQUEE: Hola -->
+  <div class="marquee marquee--hola" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+    </div>
+  </div>
+
+  <!-- ABOUT / NOTEBOOK -->
+  <section class="about" id="sobre">
+    <div class="about__bg" aria-hidden="true"></div>
+
+    <div class="about__stage">
+      <div class="notebook">
+        <div class="notebook__spiral" aria-hidden="true"></div>
+
+        <!-- LEFT PAGE -->
+        <div class="notebook__page notebook__page--left">
+          <div class="notebook__cutout">
+            <span class="cutout-board" aria-hidden="true"></span>
+            <img src="assets/about-sitting.png" alt="Sameer Qureshi" />
+            <img class="notebook__keys" src="assets/keys.png" alt="" />
+          </div>
+
+          <div class="receipt">
+            <span class="receipt__tape receipt__tape--a" aria-hidden="true"></span>
+            <span class="receipt__tape receipt__tape--b" aria-hidden="true"></span>
+            <p class="receipt__title">Sameer's<br />AI Receipt</p>
+            <p class="receipt__stars">****</p>
+            <p class="receipt__sub">Recibo ficticio<br />con fines creativos</p>
+            <p class="receipt__stars">************************</p>
+            <p class="receipt__date">Date:01.01.26</p>
+            <ul class="receipt__list">
+              <li><span>AI Engineering</span><span>x1</span></li>
+              <li><span>LangChain / RAG</span><span>x10</span></li>
+              <li><span>LLM Apps</span><span>x8</span></li>
+              <li><span>Full-Stack Dev</span><span>x6</span></li>
+              <li><span>OCR Pipelines</span><span>x4</span></li>
+              <li><span>Automation</span><span>x77</span></li>
+              <li><span>Prompt Eng.</span><span>x12</span></li>
+            </ul>
+            <div class="receipt__foot">
+              <span>Total</span>
+              <span>Eficiencia<br />$$$$</span>
+            </div>
+            <div class="receipt__barcode" aria-hidden="true"></div>
+          </div>
+
+          <div class="notebook__red-stamp">
+            <img src="assets/red-stamp.png" alt="" />
+            <svg class="notebook__pin" viewBox="0 0 40 70" aria-hidden="true">
+              <defs>
+                <linearGradient id="aboutPin" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#f0f0f0"/>
+                  <stop offset="50%" stop-color="#a8a8a8"/>
+                  <stop offset="100%" stop-color="#6a6a6a"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="20" cy="12" rx="10" ry="9" fill="none" stroke="url(#aboutPin)" stroke-width="3"/>
+              <path d="M20 21 V55" stroke="url(#aboutPin)" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M20 55 L16 62" stroke="url(#aboutPin)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- RIGHT PAGE -->
+        <div class="notebook__page notebook__page--right">
+          <div class="sticky">
+            <span class="sticky__pin" aria-hidden="true"></span>
+            <div class="sticky__softwares">
+              <h3>Softwares</h3>
+              <div class="sticky__cols">
+                <ul>
+                  <li>Python</li>
+                  <li>LangChain</li>
+                  <li>OpenAI API</li>
+                  <li>React / Next.js</li>
+                  <li>FastAPI</li>
+                  <li>Django</li>
+                </ul>
+                <ul>
+                  <li>TypeScript</li>
+                  <li>Docker</li>
+                  <li>AWS / Terraform</li>
+                  <li>PostgreSQL</li>
+                  <li>GitHub Actions</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sticky__contact">
+              <h3>Contacto</h3>
+              <ul>
+                <li>qsameer99@gmail.com</li>
+                <li>github.com/21Sameer</li>
+                <li>+92 335-9115535</li>
+                <li>Peshawar, Pakistan</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="edu-folder">
+            <h4>Educación</h4>
+            <p>BS Computer Science | 2021-2025 (UET Peshawar)</p>
+            <p>FSc Pre-Engineering | 2019-2021 (Peshawar Model Degree College)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clipboard overlapping right -->
+      <aside class="clipboard">
+        <div class="clipboard__clip" aria-hidden="true"></div>
+        <div class="clipboard__paper">
+          <h3>Experiencia</h3>
+          <ul>
+            <li><strong>ByteBoom</strong> | 2025 - Present <em>Junior AI Engineer</em></li>
+            <li><strong>MarketPulse</strong> | 2025 - 2026 <em>Multi-Agent Crypto Platform</em></li>
+            <li><strong>NewsIntel</strong> | 2025 - 2026 <em>News Intelligence Dashboard</em></li>
+            <li><strong>Local ERP</strong> | 2025 - 2026 <em>Electron Desktop ERP</em></li>
+            <li><strong>AlgoTrade Pro</strong> | 2025 <em>Algorithmic Trading Bot</em></li>
+            <li><strong>InvoiceFlow</strong> | 2025 <em>OCR to Odoo Integration</em></li>
+            <li><strong>Doctor Bot</strong> | 2024 <em>AI Medical Chatbot</em></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="indice">
+      <h2 class="indice__title">Index</h2>
+      <div class="indice__cols">
+        <ol class="indice__list">
+          <li><a href="#branding"><span>01 _ 03</span> AI / LLM Applications</a></li>
+          <li><a href="#social"><span>04 _ 07</span> Full-Stack Platforms</a></li>
+          <li><a href="#p05"><span>_ 08</span> OCR &amp; Automation</a></li>
+        </ol>
+        <ol class="indice__list">
+          <li><a href="#p01"><span>09</span> Multi-Agent Systems</a></li>
+          <li><a href="#p04"><span>10</span> Trading &amp; Analytics</a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE: Hola again -->
+  <div class="marquee marquee--hola" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+      <span class="marquee__item">¡Hola! Tomá <em>asiento</em> <span class="chair">🪑</span> Y trabajemos juntos</span>
+    </div>
+  </div>
+
+  <!-- CHAPTER: AI PROJECTS -->
+  <section class="chapter-hero" id="branding">
+    <div class="chapter-hero__bg" style="background-image: url('assets/bg-tokyo.png')"></div>
+    <h2 class="chapter-hero__script">Projects</h2>
+  </section>
+
+  <div class="marquee marquee--brand" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+    </div>
+  </div>
+
+  <!-- PROJECT 01 — MarketPulse -->
+  <section class="project project--overlay showcase" id="p01" style="--bg: url('assets/bg-hills-blur.png')">
+    <div class="showcase__inner">
+      <div class="showcase__copy">
+        <p class="showcase__num" aria-hidden="true">01</p>
+        <h3 class="showcase__title">MarketPulse</h3>
+        <p class="showcase__desc">
+          Multi-agent crypto market intelligence platform — 8 microservices
+          for volatility, technical analysis, whale tracking, liquidations,
+          fund flow, ETF/macro context, and LLM news sentiment.
+        </p>
+        <p class="showcase__tags">Python · LLM/VLM · Microservices · REST APIs</p>
+      </div>
+      <div class="showcase__stage">
+        <div class="phone phone--hero">
+          <div class="phone__screen">
+            <img src="assets/ui-marketpulse.png" alt="MarketPulse mobile UI" />
+          </div>
+        </div>
+        <div class="float-card float-card--a">Whale Tracker</div>
+        <div class="float-card float-card--b">VLM Charts</div>
+        <div class="float-card float-card--c">Sentiment</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee marquee--brand" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+    </div>
+  </div>
+
+  <!-- PROJECT 02 — NewsIntel -->
+  <section class="project project--overlay showcase" id="p02" style="--bg: url('assets/bg-tokyo.png')">
+    <div class="showcase__inner">
+      <div class="showcase__copy">
+        <p class="showcase__num" aria-hidden="true">02</p>
+        <h3 class="showcase__title">NewsIntel</h3>
+        <p class="showcase__desc">
+          News intelligence dashboard aggregating 360+ RSS sources into an
+          Executive Daily Briefing — Cloud, Forex, Gold, Cybersecurity modules
+          with live refresh and Hot Trends timeline.
+        </p>
+        <p class="showcase__tags">Next.js · React · TypeScript · Vercel</p>
+      </div>
+      <div class="showcase__stage">
+        <figure class="desk-frame">
+          <img src="assets/ui-newsintel.png" alt="NewsIntel dashboard" />
+        </figure>
+        <div class="float-card float-card--a">360+ Feeds</div>
+        <div class="float-card float-card--d">Daily Brief</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee marquee--brand" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+      <span class="marquee__item"><strong>AI Projects</strong> ✻ Built with Intent ✻ </span>
+    </div>
+  </div>
+
+  <!-- PROJECT 03 — Local ERP -->
+  <section class="project project--overlay showcase" id="p03" style="--bg: url('assets/bg-about-sky.png')">
+    <div class="showcase__inner">
+      <div class="showcase__copy">
+        <p class="showcase__num" aria-hidden="true">03</p>
+        <h3 class="showcase__title">Local ERP</h3>
+        <p class="showcase__desc">
+          Windows desktop ERP built with Electron + Next.js — clients, invoices,
+          quotations, inventory, and A4 Pakistani Sales Tax printing with
+          offline SQLite storage and Excel backup export.
+        </p>
+        <p class="showcase__tags">Electron · Next.js · SQLite · Prisma</p>
+      </div>
+      <div class="showcase__stage">
+        <figure class="desk-frame desk-frame--tilt">
+          <img src="assets/ui-erp.png" alt="Local ERP interface" />
+        </figure>
+        <div class="float-card float-card--b">Offline-first</div>
+        <div class="float-card float-card--c">Tax Invoices</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER: AUTOMATION -->
+  <section class="chapter-hero chapter-hero--social" id="social">
+    <div class="chapter-hero__bg" style="background-image: url('assets/bg-yellow-car.png')"></div>
+    <h2 class="chapter-hero__script">Systems</h2>
+  </section>
+
+  <div class="marquee marquee--social" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+    </div>
+  </div>
+
+  <!-- PROJECT 04 — AlgoTrade -->
+  <section class="project project--overlay showcase" id="p04" style="--bg: url('assets/bg-cafe-blur.png')">
+    <div class="showcase__inner">
+      <div class="showcase__copy">
+        <p class="showcase__num" aria-hidden="true">04</p>
+        <h3 class="showcase__title">AlgoTrade Pro</h3>
+        <p class="showcase__desc">
+          Automated crypto trading bot with RSI, MACD, and Bollinger strategies —
+          OpenAI news sentiment enrichment, stop-loss / take-profit controls,
+          and sub-200ms order execution on AWS ECS.
+        </p>
+        <p class="showcase__tags">Python · Binance · OpenAI · Terraform</p>
+      </div>
+      <div class="showcase__stage">
+        <div class="phone phone--hero">
+          <div class="phone__screen">
+            <img src="assets/ui-algotrade.png" alt="AlgoTrade Pro UI" />
+          </div>
+        </div>
+        <div class="float-card float-card--a">RSI · MACD</div>
+        <div class="float-card float-card--d">&lt;200ms</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee marquee--social" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+    </div>
+  </div>
+
+  <!-- PROJECT 05 — InvoiceFlow -->
+  <section class="project project--overlay showcase" id="p05" style="--bg: url('assets/bg-skin-blur.png')">
+    <div class="showcase__inner">
+      <div class="showcase__copy">
+        <p class="showcase__num" aria-hidden="true">05</p>
+        <h3 class="showcase__title">InvoiceFlow</h3>
+        <p class="showcase__desc">
+          OCR-to-Odoo pipeline extracting invoice data from PDF/JPG at ~96%
+          accuracy — GPT validation, FastAPI microservice, Streamlit review UI,
+          and IMAP email-trigger for automated ingestion.
+        </p>
+        <p class="showcase__tags">Tesseract · OpenAI · FastAPI · Odoo</p>
+      </div>
+      <div class="showcase__stage">
+        <figure class="desk-frame">
+          <img src="assets/ui-invoiceflow.png" alt="InvoiceFlow OCR UI" />
+        </figure>
+        <div class="float-card float-card--b">~96% OCR</div>
+        <div class="float-card float-card--c">→ Odoo</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee marquee--social" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+    </div>
+  </div>
+
+  <!-- PROJECT 06 — Doctor Bot -->
+  <section class="project project--overlay showcase" id="p06" style="--bg: url('assets/bg-mountains.png')">
+    <div class="showcase__inner">
+      <div class="showcase__copy">
+        <p class="showcase__num" aria-hidden="true">06</p>
+        <h3 class="showcase__title">Doctor Bot</h3>
+        <p class="showcase__desc">
+          Medical AI chatbot for symptom-to-diagnosis guidance with multi-turn
+          memory — OCR parses uploaded medical reports and summarises them
+          inside the conversation flow.
+        </p>
+        <p class="showcase__tags">LangChain · OpenAI · Gradio · OCR</p>
+      </div>
+      <div class="showcase__stage">
+        <div class="phone phone--hero">
+          <div class="phone__screen">
+            <img src="assets/ui-doctorbot.png" alt="Doctor Bot chat UI" />
+          </div>
+        </div>
+        <div class="float-card float-card--a">Multi-turn</div>
+        <div class="float-card float-card--d">Report OCR</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee marquee--social" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+      <span class="marquee__item">✻ Automation ✻ Agents ✻ Pipelines ✻ </span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bg" style="background-image: url('assets/bg-mountains.png')"></div>
+    <div class="footer__content">
+      <p class="footer__script">Thanks</p>
+      <p class="footer__sub">for taking the time</p>
+      <a class="footer__mail" href="mailto:qsameer99@gmail.com">qsameer99@gmail.com</a>
+    </div>
+  </footer>
+
+  <div class="hire-bar">
+    <img src="assets/portrait-polaroid.png" alt="" class="hire-bar__avatar" />
+    <span>Available for hire</span>
+    <a
+      class="hire-bar__btn"
+      href="assets/Sameer_Qureshi_AI_Engineer_CV.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      download="Sameer_Qureshi_AI_Engineer_CV.pdf"
+    >Hire me</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

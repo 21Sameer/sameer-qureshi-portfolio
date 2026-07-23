@@ -1,0 +1,10 @@
+{
+  "name": "sameer-qureshi-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sameer Qureshi — AI Engineer portfolio",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "vercel --prod"
+  }
+}
