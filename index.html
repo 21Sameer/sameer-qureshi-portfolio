@@ -216,9 +216,13 @@
   </div>
 
   <!-- CHAPTER: AI PROJECTS -->
-  <section class="chapter-hero" id="branding">
-    <div class="chapter-hero__bg" style="background-image: url('assets/bg-tokyo.png')"></div>
-    <h2 class="chapter-hero__script">Projects</h2>
+  <section class="chapter-hero chapter-hero--gold" id="branding">
+    <div class="chapter-hero__bg" style="background-image: url('assets/bg-dust-paper.png')"></div>
+    <div class="chapter-hero__stamp">
+      <p class="chapter-hero__eyebrow">Chapter 01</p>
+      <h2 class="chapter-hero__script">Projects</h2>
+      <p class="chapter-hero__note">built · shipped · documented</p>
+    </div>
   </section>
 
   <div class="marquee marquee--brand" aria-hidden="true">
@@ -231,29 +235,32 @@
   </div>
 
   <!-- PROJECT 01 — MarketPulse -->
-  <section class="project project--overlay showcase" id="p01" style="--bg: url('assets/bg-hills-blur.png')">
-    <div class="showcase__inner">
-      <div class="showcase__copy">
-        <p class="showcase__num" aria-hidden="true">01</p>
-        <h3 class="showcase__title">MarketPulse</h3>
-        <p class="showcase__desc">
-          Multi-agent crypto market intelligence platform — 8 microservices
-          for volatility, technical analysis, whale tracking, liquidations,
-          fund flow, ETF/macro context, and LLM news sentiment.
-        </p>
-        <p class="showcase__tags">Python · LLM/VLM · Microservices · REST APIs</p>
-      </div>
-      <div class="showcase__stage">
-        <div class="phone phone--hero">
-          <div class="phone__screen">
-            <img src="assets/ui-marketpulse.png" alt="MarketPulse mobile UI" />
-          </div>
+  <section class="project project--poster showcase" id="p01">
+    <div class="project__scene" style="background-image: url('assets/bg-dust-green.png')"></div>
+    <article class="poster-card">
+      <div class="showcase__inner">
+        <div class="showcase__copy">
+          <p class="showcase__num" aria-hidden="true">01</p>
+          <h3 class="showcase__title">MarketPulse</h3>
+          <p class="showcase__desc">
+            Multi-agent crypto market intelligence platform — 8 microservices
+            for volatility, technical analysis, whale tracking, liquidations,
+            fund flow, ETF/macro context, and LLM news sentiment.
+          </p>
+          <p class="showcase__tags">Python · LLM/VLM · Microservices · REST APIs</p>
         </div>
-        <div class="float-card float-card--a">Whale Tracker</div>
-        <div class="float-card float-card--b">VLM Charts</div>
-        <div class="float-card float-card--c">Sentiment</div>
+        <div class="showcase__stage">
+          <div class="phone phone--hero">
+            <div class="phone__screen">
+              <img src="assets/ui-marketpulse.png" alt="MarketPulse mobile UI" />
+            </div>
+          </div>
+          <div class="float-card float-card--a">Whale Tracker</div>
+          <div class="float-card float-card--b">VLM Charts</div>
+          <div class="float-card float-card--c">Sentiment</div>
+        </div>
       </div>
-    </div>
+    </article>
   </section>
 
   <div class="marquee marquee--brand" aria-hidden="true">
@@ -266,26 +273,29 @@
   </div>
 
   <!-- PROJECT 02 — NewsIntel -->
-  <section class="project project--overlay showcase" id="p02" style="--bg: url('assets/bg-tokyo.png')">
-    <div class="showcase__inner">
-      <div class="showcase__copy">
-        <p class="showcase__num" aria-hidden="true">02</p>
-        <h3 class="showcase__title">NewsIntel</h3>
-        <p class="showcase__desc">
-          News intelligence dashboard aggregating 360+ RSS sources into an
-          Executive Daily Briefing — Cloud, Forex, Gold, Cybersecurity modules
-          with live refresh and Hot Trends timeline.
-        </p>
-        <p class="showcase__tags">Next.js · React · TypeScript · Vercel</p>
+  <section class="project project--poster showcase" id="p02">
+    <div class="project__scene project__scene--paper" style="background-image: url('assets/bg-dust-green.png')"></div>
+    <article class="poster-card poster-card--alt">
+      <div class="showcase__inner">
+        <div class="showcase__copy">
+          <p class="showcase__num" aria-hidden="true">02</p>
+          <h3 class="showcase__title">NewsIntel</h3>
+          <p class="showcase__desc">
+            News intelligence dashboard aggregating 360+ RSS sources into an
+            Executive Daily Briefing — Cloud, Forex, Gold, Cybersecurity modules
+            with live refresh and Hot Trends timeline.
+          </p>
+          <p class="showcase__tags">Next.js · React · TypeScript · Vercel</p>
+        </div>
+        <div class="showcase__stage">
+          <figure class="desk-frame">
+            <img src="assets/ui-newsintel.png" alt="NewsIntel dashboard" />
+          </figure>
+          <div class="float-card float-card--a">360+ Feeds</div>
+          <div class="float-card float-card--d">Daily Brief</div>
+        </div>
       </div>
-      <div class="showcase__stage">
-        <figure class="desk-frame">
-          <img src="assets/ui-newsintel.png" alt="NewsIntel dashboard" />
-        </figure>
-        <div class="float-card float-card--a">360+ Feeds</div>
-        <div class="float-card float-card--d">Daily Brief</div>
-      </div>
-    </div>
+    </article>
   </section>
 
   <div class="marquee marquee--brand" aria-hidden="true">
@@ -298,32 +308,39 @@
   </div>
 
   <!-- PROJECT 03 — Local ERP -->
-  <section class="project project--overlay showcase" id="p03" style="--bg: url('assets/bg-about-sky.png')">
-    <div class="showcase__inner">
-      <div class="showcase__copy">
-        <p class="showcase__num" aria-hidden="true">03</p>
-        <h3 class="showcase__title">Local ERP</h3>
-        <p class="showcase__desc">
-          Windows desktop ERP built with Electron + Next.js — clients, invoices,
-          quotations, inventory, and A4 Pakistani Sales Tax printing with
-          offline SQLite storage and Excel backup export.
-        </p>
-        <p class="showcase__tags">Electron · Next.js · SQLite · Prisma</p>
+  <section class="project project--poster showcase" id="p03">
+    <div class="project__scene" style="background-image: url('assets/bg-dust-green.png')"></div>
+    <article class="poster-card">
+      <div class="showcase__inner">
+        <div class="showcase__copy">
+          <p class="showcase__num" aria-hidden="true">03</p>
+          <h3 class="showcase__title">Local ERP</h3>
+          <p class="showcase__desc">
+            Windows desktop ERP built with Electron + Next.js — clients, invoices,
+            quotations, inventory, and A4 Pakistani Sales Tax printing with
+            offline SQLite storage and Excel backup export.
+          </p>
+          <p class="showcase__tags">Electron · Next.js · SQLite · Prisma</p>
+        </div>
+        <div class="showcase__stage">
+          <figure class="desk-frame desk-frame--tilt">
+            <img src="assets/ui-erp.png" alt="Local ERP interface" />
+          </figure>
+          <div class="float-card float-card--b">Offline-first</div>
+          <div class="float-card float-card--c">Tax Invoices</div>
+        </div>
       </div>
-      <div class="showcase__stage">
-        <figure class="desk-frame desk-frame--tilt">
-          <img src="assets/ui-erp.png" alt="Local ERP interface" />
-        </figure>
-        <div class="float-card float-card--b">Offline-first</div>
-        <div class="float-card float-card--c">Tax Invoices</div>
-      </div>
-    </div>
+    </article>
   </section>
 
   <!-- CHAPTER: AUTOMATION -->
-  <section class="chapter-hero chapter-hero--social" id="social">
-    <div class="chapter-hero__bg" style="background-image: url('assets/bg-yellow-car.png')"></div>
-    <h2 class="chapter-hero__script">Systems</h2>
+  <section class="chapter-hero chapter-hero--paper" id="social">
+    <div class="chapter-hero__bg" style="background-image: url('assets/bg-dust-paper.png')"></div>
+    <div class="chapter-hero__stamp chapter-hero__stamp--ink">
+      <p class="chapter-hero__eyebrow">Chapter 02</p>
+      <h2 class="chapter-hero__script">Systems</h2>
+      <p class="chapter-hero__note">agents · pipelines · platforms</p>
+    </div>
   </section>
 
   <div class="marquee marquee--social" aria-hidden="true">
@@ -336,28 +353,31 @@
   </div>
 
   <!-- PROJECT 04 — AlgoTrade -->
-  <section class="project project--overlay showcase" id="p04" style="--bg: url('assets/bg-cafe-blur.png')">
-    <div class="showcase__inner">
-      <div class="showcase__copy">
-        <p class="showcase__num" aria-hidden="true">04</p>
-        <h3 class="showcase__title">AlgoTrade Pro</h3>
-        <p class="showcase__desc">
-          Automated crypto trading bot with RSI, MACD, and Bollinger strategies —
-          OpenAI news sentiment enrichment, stop-loss / take-profit controls,
-          and sub-200ms order execution on AWS ECS.
-        </p>
-        <p class="showcase__tags">Python · Binance · OpenAI · Terraform</p>
-      </div>
-      <div class="showcase__stage">
-        <div class="phone phone--hero">
-          <div class="phone__screen">
-            <img src="assets/ui-algotrade.png" alt="AlgoTrade Pro UI" />
-          </div>
+  <section class="project project--poster showcase" id="p04">
+    <div class="project__scene project__scene--paper" style="background-image: url('assets/bg-dust-green.png')"></div>
+    <article class="poster-card poster-card--alt">
+      <div class="showcase__inner">
+        <div class="showcase__copy">
+          <p class="showcase__num" aria-hidden="true">04</p>
+          <h3 class="showcase__title">AlgoTrade Pro</h3>
+          <p class="showcase__desc">
+            Automated crypto trading bot with RSI, MACD, and Bollinger strategies —
+            OpenAI news sentiment enrichment, stop-loss / take-profit controls,
+            and sub-200ms order execution on AWS ECS.
+          </p>
+          <p class="showcase__tags">Python · Binance · OpenAI · Terraform</p>
         </div>
-        <div class="float-card float-card--a">RSI · MACD</div>
-        <div class="float-card float-card--d">&lt;200ms</div>
+        <div class="showcase__stage">
+          <div class="phone phone--hero">
+            <div class="phone__screen">
+              <img src="assets/ui-algotrade.png" alt="AlgoTrade Pro UI" />
+            </div>
+          </div>
+          <div class="float-card float-card--a">RSI · MACD</div>
+          <div class="float-card float-card--d">&lt;200ms</div>
+        </div>
       </div>
-    </div>
+    </article>
   </section>
 
   <div class="marquee marquee--social" aria-hidden="true">
@@ -370,26 +390,29 @@
   </div>
 
   <!-- PROJECT 05 — InvoiceFlow -->
-  <section class="project project--overlay showcase" id="p05" style="--bg: url('assets/bg-skin-blur.png')">
-    <div class="showcase__inner">
-      <div class="showcase__copy">
-        <p class="showcase__num" aria-hidden="true">05</p>
-        <h3 class="showcase__title">InvoiceFlow</h3>
-        <p class="showcase__desc">
-          OCR-to-Odoo pipeline extracting invoice data from PDF/JPG at ~96%
-          accuracy — GPT validation, FastAPI microservice, Streamlit review UI,
-          and IMAP email-trigger for automated ingestion.
-        </p>
-        <p class="showcase__tags">Tesseract · OpenAI · FastAPI · Odoo</p>
+  <section class="project project--poster showcase" id="p05">
+    <div class="project__scene" style="background-image: url('assets/bg-dust-green.png')"></div>
+    <article class="poster-card">
+      <div class="showcase__inner">
+        <div class="showcase__copy">
+          <p class="showcase__num" aria-hidden="true">05</p>
+          <h3 class="showcase__title">InvoiceFlow</h3>
+          <p class="showcase__desc">
+            OCR-to-Odoo pipeline extracting invoice data from PDF/JPG at ~96%
+            accuracy — GPT validation, FastAPI microservice, Streamlit review UI,
+            and IMAP email-trigger for automated ingestion.
+          </p>
+          <p class="showcase__tags">Tesseract · OpenAI · FastAPI · Odoo</p>
+        </div>
+        <div class="showcase__stage">
+          <figure class="desk-frame">
+            <img src="assets/ui-invoiceflow.png" alt="InvoiceFlow OCR UI" />
+          </figure>
+          <div class="float-card float-card--b">~96% OCR</div>
+          <div class="float-card float-card--c">→ Odoo</div>
+        </div>
       </div>
-      <div class="showcase__stage">
-        <figure class="desk-frame">
-          <img src="assets/ui-invoiceflow.png" alt="InvoiceFlow OCR UI" />
-        </figure>
-        <div class="float-card float-card--b">~96% OCR</div>
-        <div class="float-card float-card--c">→ Odoo</div>
-      </div>
-    </div>
+    </article>
   </section>
 
   <div class="marquee marquee--social" aria-hidden="true">
@@ -402,28 +425,31 @@
   </div>
 
   <!-- PROJECT 06 — Doctor Bot -->
-  <section class="project project--overlay showcase" id="p06" style="--bg: url('assets/bg-mountains.png')">
-    <div class="showcase__inner">
-      <div class="showcase__copy">
-        <p class="showcase__num" aria-hidden="true">06</p>
-        <h3 class="showcase__title">Doctor Bot</h3>
-        <p class="showcase__desc">
-          Medical AI chatbot for symptom-to-diagnosis guidance with multi-turn
-          memory — OCR parses uploaded medical reports and summarises them
-          inside the conversation flow.
-        </p>
-        <p class="showcase__tags">LangChain · OpenAI · Gradio · OCR</p>
-      </div>
-      <div class="showcase__stage">
-        <div class="phone phone--hero">
-          <div class="phone__screen">
-            <img src="assets/ui-doctorbot.png" alt="Doctor Bot chat UI" />
-          </div>
+  <section class="project project--poster showcase" id="p06">
+    <div class="project__scene project__scene--paper" style="background-image: url('assets/bg-dust-green.png')"></div>
+    <article class="poster-card poster-card--alt">
+      <div class="showcase__inner">
+        <div class="showcase__copy">
+          <p class="showcase__num" aria-hidden="true">06</p>
+          <h3 class="showcase__title">Doctor Bot</h3>
+          <p class="showcase__desc">
+            Medical AI chatbot for symptom-to-diagnosis guidance with multi-turn
+            memory — OCR parses uploaded medical reports and summarises them
+            inside the conversation flow.
+          </p>
+          <p class="showcase__tags">LangChain · OpenAI · Gradio · OCR</p>
         </div>
-        <div class="float-card float-card--a">Multi-turn</div>
-        <div class="float-card float-card--d">Report OCR</div>
+        <div class="showcase__stage">
+          <div class="phone phone--hero">
+            <div class="phone__screen">
+              <img src="assets/ui-doctorbot.png" alt="Doctor Bot chat UI" />
+            </div>
+          </div>
+          <div class="float-card float-card--a">Multi-turn</div>
+          <div class="float-card float-card--d">Report OCR</div>
+        </div>
       </div>
-    </div>
+    </article>
   </section>
 
   <div class="marquee marquee--social" aria-hidden="true">

@@ -933,10 +933,11 @@ ul {
 /* ---------- CHAPTER HEROES ---------- */
 .chapter-hero {
   position: relative;
-  min-height: 72vh;
+  min-height: 78vh;
   display: grid;
   place-items: center;
   overflow: hidden;
+  padding: clamp(2rem, 6vh, 4rem) 1.25rem;
 }
 
 .chapter-hero__bg {
@@ -944,32 +945,116 @@ ul {
   inset: 0;
   background-size: cover;
   background-position: center;
-  filter: contrast(1.08) saturate(0.85) brightness(0.72);
-  transform: scale(1.05);
+  background-color: #d8d2c6;
+  filter: contrast(1.05) brightness(0.88) saturate(0.85);
+  transform: scale(1.02);
 }
 
-.chapter-hero__bg::after {
+.chapter-hero--gold .chapter-hero__bg,
+.chapter-hero--paper .chapter-hero__bg {
+  filter: contrast(1.08) brightness(0.86) saturate(0.8);
+}
+
+.chapter-hero--gold .chapter-hero__bg::after,
+.chapter-hero--paper .chapter-hero__bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+  background:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.12 0 0 0 0 0.08 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, rgba(40, 34, 26, 0.12), rgba(40, 34, 26, 0.22));
+  background-size: 180px 180px, auto;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+}
+
+.chapter-hero__stamp {
+  position: relative;
+  z-index: 1;
+  width: min(880px, 92vw);
+  padding: clamp(2.75rem, 7vw, 4.75rem) clamp(1.75rem, 5vw, 3.75rem);
+  background:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #e8e2d4 0%, #d6cfbf 100%);
+  border: 1.5px solid rgba(60, 48, 36, 0.28);
+  box-shadow:
+    0 0 0 10px #d9d2c4,
+    0 0 0 11px rgba(60, 48, 36, 0.2),
+    0 28px 60px rgba(40, 28, 16, 0.22),
+    0 8px 18px rgba(40, 28, 16, 0.1);
+  outline: 2px dashed rgba(60, 48, 36, 0.3);
+  outline-offset: -16px;
+  text-align: center;
+  border-radius: 3px;
+  transform: rotate(-1.5deg);
+  animation: stamp-in 1s var(--ease) both;
+}
+
+.chapter-hero__stamp--ink {
+  transform: rotate(1.6deg);
+  background:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.2'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #e4ddd0 0%, #cfc7b6 100%);
+  animation-name: stamp-in-alt;
+}
+
+.chapter-hero__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(86, 65, 48, 0.7);
+  margin-bottom: 0.6rem;
 }
 
 .chapter-hero__script {
   position: relative;
   z-index: 1;
   font-family: var(--font-script);
-  font-size: clamp(4.5rem, 16vw, 11rem);
-  color: var(--white);
+  font-size: clamp(4.2rem, 14vw, 9.5rem);
+  color: #1a3a2a;
   font-weight: 400;
   line-height: 0.9;
   text-align: center;
-  text-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.15),
-    0 20px 50px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
   letter-spacing: 0.01em;
-  padding: 0 4vw;
-  animation: script-in 1.2s var(--ease) both;
+  margin: 0;
+}
+
+.chapter-hero--gold .chapter-hero__script {
+  color: #8a3414;
+}
+
+.chapter-hero__note {
+  margin-top: 1rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(86, 65, 48, 0.72);
+  letter-spacing: 0.04em;
+}
+
+@keyframes stamp-in {
+  from {
+    opacity: 0;
+    transform: rotate(-1.5deg) translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-1.5deg) translateY(0) scale(1);
+  }
+}
+
+@keyframes stamp-in-alt {
+  from {
+    opacity: 0;
+    transform: rotate(1.6deg) translateY(18px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(1.6deg) translateY(0) scale(1);
+  }
 }
 
 @keyframes script-in {
@@ -1043,9 +1128,96 @@ ul {
   background: rgba(0, 0, 0, 0.35);
 }
 
+/* Poster-card projects (match Projects / Systems stamp feel) */
+.project--poster {
+  min-height: 88vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(3rem, 7vh, 5.5rem) clamp(1rem, 4vw, 2.5rem);
+  color: var(--ink);
+}
+
+.project__scene {
+  position: absolute;
+  inset: 0;
+  background-color: #c5cbb8;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  filter: contrast(1.08) brightness(0.86) saturate(0.9) hue-rotate(18deg);
+}
+
+.project__scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.05' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.12 0 0 0 0 0.08 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, rgba(26, 58, 42, 0.1), rgba(26, 58, 42, 0.22));
+  background-size: 160px 160px, auto;
+  mix-blend-mode: multiply;
+  opacity: 0.88;
+}
+
+.project__scene--paper {
+  filter: contrast(1.1) brightness(0.84) saturate(0.95) hue-rotate(22deg);
+}
+
+.project__scene--paper::after {
+  opacity: 0.92;
+}
+
+.poster-card {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 94vw);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  background:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #f3eee3 0%, #e5dfd0 100%);
+  border: 1.5px solid rgba(40, 70, 52, 0.28);
+  box-shadow:
+    0 0 0 10px #d5d8c8,
+    0 0 0 11px rgba(40, 70, 52, 0.18),
+    0 28px 60px rgba(26, 45, 32, 0.2),
+    0 8px 18px rgba(26, 45, 32, 0.1);
+  outline: 2px dashed rgba(40, 70, 52, 0.28);
+  outline-offset: -14px;
+  border-radius: 3px;
+  transform: rotate(-0.8deg);
+}
+
+.poster-card--alt {
+  transform: rotate(0.9deg);
+  background:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #f1ecdf 0%, #ddd8c6 100%);
+}
+
+.project--poster .showcase__num {
+  -webkit-text-stroke: 1.5px rgba(26, 58, 42, 0.32);
+}
+
+.project--poster .showcase__title {
+  color: #14291c;
+}
+
+.project--poster .showcase__desc {
+  color: rgba(26, 45, 32, 0.7);
+}
+
+.project--poster .showcase__tags {
+  color: rgba(40, 70, 52, 0.55);
+}
+
 /* Fancy project showcase (MurMur-style) */
 .showcase {
   padding: clamp(3.5rem, 8vh, 6rem) clamp(1.25rem, 5vw, 4rem);
+}
+
+.project--poster.showcase {
+  padding: clamp(3rem, 7vh, 5.5rem) clamp(1rem, 4vw, 2.5rem);
 }
 
 .showcase__inner {
@@ -1057,6 +1229,10 @@ ul {
   grid-template-columns: 0.95fr 1.15fr;
   gap: clamp(1.5rem, 4vw, 3.5rem);
   align-items: center;
+}
+
+.poster-card .showcase__inner {
+  width: 100%;
 }
 
 .showcase__copy {
@@ -1098,6 +1274,16 @@ ul {
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.65);
   font-weight: 500;
+}
+
+.project--poster .phone--hero {
+  box-shadow: 0 22px 48px rgba(40, 28, 16, 0.28);
+}
+
+.project--poster .desk-frame {
+  background: #fffef8;
+  border: 1px solid rgba(86, 65, 48, 0.14);
+  box-shadow: 0 22px 48px rgba(40, 28, 16, 0.2);
 }
 
 .showcase__stage {
@@ -1814,10 +2000,21 @@ ul {
     font-size: 0.5rem;
   }
 
-  .project--overlay {
+  .project--overlay,
+  .project--poster {
     background-attachment: scroll;
     min-height: auto;
-    padding-block: 4rem;
+    padding-block: 3rem;
+  }
+
+  .poster-card,
+  .poster-card--alt {
+    transform: none;
+    outline-offset: -10px;
+    box-shadow:
+      0 0 0 8px #d5d8c8,
+      0 0 0 9px rgba(40, 70, 52, 0.18),
+      0 18px 40px rgba(26, 45, 32, 0.18);
   }
 
   .indice {
